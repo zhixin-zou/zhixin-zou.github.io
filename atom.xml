@@ -6,7 +6,7 @@
     <updated>2022-10-11T02:45:22.316Z</updated>
     <entry>
         <id>https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/</id>
-        <title></title>
+        <title>js reduce方法</title>
         <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/"/>
         <content type="html">&lt;p&gt;reduce 方法 (累加器)&lt;br&gt;
 array.reduce(function(total, currentValue, currentIndex, arr), initialValue);&lt;/p&gt;
