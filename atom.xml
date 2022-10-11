@@ -3,7 +3,24 @@
     <id>https://zhixin-zou.github.io</id>
     <title>star belog</title>
     <link href="https://zhixin-zou.github.io" />
-    <updated>2022-10-10T02:27:56.623Z</updated>
+    <updated>2022-10-11T02:45:22.316Z</updated>
+    <entry>
+        <id>https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/</id>
+        <title></title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/"/>
+        <content type="html">&lt;p&gt;reduce 方法 (累加器)&lt;br&gt;
+array.reduce(function(total, currentValue, currentIndex, arr), initialValue);&lt;/p&gt;
+&lt;p&gt;function (total, currentValue, currentIndex, arr) 是一个回调函数&lt;/p&gt;
+&lt;p&gt;total 必填，计算结果的返回值&lt;/p&gt;
+&lt;p&gt;currentValue 当前正在处理的元素&lt;/p&gt;
+&lt;p&gt;currentIndex 当前处理元素的下标&lt;/p&gt;
+&lt;p&gt;arr 当前数组&lt;/p&gt;
+&lt;p&gt;initialValue 设置初始值，相当于 total 的初始值&lt;/p&gt;
+&lt;p&gt;实例&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let names = [&amp;#x27;Alice&amp;#x27;, &amp;#x27;Bob&amp;#x27;, &amp;#x27;Tiff&amp;#x27;, &amp;#x27;Bruce&amp;#x27;, &amp;#x27;Alice&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   let numbers = [1, 2, 1, 5, 6, 3]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   names.reduce(function (prev, cur, index, arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     if (cur in prev) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       prev[cur]++&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       prev[cur] = 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     console.log(prev)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     return prev&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;, &amp;#123;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   let a = numbers.reduce((prev, cur, index, arr) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     console.log(prev, &amp;#x27;prevq&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     return prev + cur&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   console.log(a, &amp;#x27;a&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <updated>2022-10-11T02:45:22.316Z</updated>
+    </entry>
     <entry>
         <id>https://zhixin-zou.github.io/2022/10/10/hello-world/</id>
         <title>Hello World</title>
