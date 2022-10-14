@@ -3,11 +3,56 @@
     <id>https://zhixin-zou.github.io</id>
     <title>star belog</title>
     <link href="https://zhixin-zou.github.io" />
-    <updated>2022-10-13T03:00:56.158Z</updated>
+    <updated>2022-10-14T07:53:42.572Z</updated>
     <entry>
-        <id>https://zhixin-zou.github.io/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</id>
-        <title></title>
-        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/"/>
+        <id>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
+        <title>github pages + hexo搭建博客笔记 （一）</title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+        <content type="html">&lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;搭建步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭建步骤&#34;&gt;#&lt;/a&gt; 搭建步骤&lt;/h1&gt;
+&lt;h2 id=&#34;一-安装hexo生成网站文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-安装hexo生成网站文件&#34;&gt;#&lt;/a&gt; 一、安装 Hexo 生成网站文件&lt;/h2&gt;
+&lt;p&gt;在文件夹中右击 git brash Here&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/167/WEBRESOURCE8211eb5c171d85d9ad2569109314f5fc&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ &lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt; &lt;br&gt;
+ 当然如果对 npm 比较熟悉可以使用     &lt;code&gt;$ npm install hexo&lt;/code&gt;  安装 hexo。&lt;br&gt;
+安装以后，可以使用以下两种方式执行 Hexo：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;npx hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用  &lt;code&gt;hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里我使用的是非全局安装方式搭建，安装完 hexo 后使用命令 &lt;code&gt;npx hexo init &amp;lt;自己取名&amp;gt;&lt;/code&gt;  这里我以 belog 为例&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/186/WEBRESOURCE48686d87123a9a3921b4ae6b5c19286c&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 初始化后会文件夹会出现如下代码&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/191/WEBRESOURCEf7ccc6558ff1b3d2220fd63bda9a244b&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 然后  &lt;code&gt;cd belog&lt;/code&gt;  进入文件夹&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/194/WEBRESOURCE71272dbfa3d9e2a34d46ae40421b07ee&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-github-pages&#34;&gt;#&lt;/a&gt; 二、 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;首先登陆你的 github 账号，新建一个库&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/202/WEBRESOURCE290b7ecf0d6cb8cbb4a57b5ed94b4dfb&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 进入建库界面&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/207/WEBRESOURCEf4df98f5c0dd16416c3b281281bf2a5d&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 这里的存储库名称及 Repository name 要命名为 &lt;code&gt;&amp;lt;user&amp;gt;.github.io&lt;/code&gt;  我这里因为博客已经搭建完成，所以显示的该账号已存在 zhixin-zou.github.io 仓库。小伙伴们第一次建的话直接点底下的 Create repository 就行。&lt;/p&gt;
+&lt;h2 id=&#34;将-hexo-部署到-github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#将-hexo-部署到-github-pages&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;回到 git bash 在命令行安装 hexo-deployer-git 运行  &lt;code&gt;npm i hexo-deployer-git&lt;/code&gt; &lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/223/WEBRESOURCEc358d5d72bc2c789daeda36beb26a2a3&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 用代码编辑器打开 belog 文件夹，找到 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/239/WEBRESOURCEbb8e485c4cdd34ae468b92663ead5eff&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://note.youdao.com/yws/res/230/WEBRESOURCEc8766b0cdccc31887be37d53063ff9f0&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 将 url 换做你的地址，deploy 部分更换配置如下&lt;/p&gt;
+  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# example, https://github.com/hexojs/hexojs.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branch: gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
+最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
+</content>
+        <updated>2022-10-14T07:53:42.572Z</updated>
+    </entry>
+    <entry>
+        <id>https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</id>
+        <title>vue2和vue3区别</title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/"/>
         <content type="html">&lt;p&gt;一、新特性&lt;br&gt;
  1、组合式 API—setup&lt;/p&gt;
 &lt;p&gt;2、ref 创建响应式数据&lt;/p&gt;
@@ -28,9 +73,9 @@
         <updated>2022-10-13T03:00:56.158Z</updated>
     </entry>
     <entry>
-        <id>https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/</id>
+        <id>https://zhixin-zou.github.io/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/</id>
         <title>js reduce方法</title>
-        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/"/>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/"/>
         <content type="html">&lt;p&gt;reduce 方法 (累加器)&lt;br&gt;
 array.reduce(function(total, currentValue, currentIndex, arr), initialValue);&lt;/p&gt;
 &lt;p&gt;function (total, currentValue, currentIndex, arr) 是一个回调函数&lt;/p&gt;
@@ -43,26 +88,5 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);&lt
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let names = [&amp;#x27;Alice&amp;#x27;, &amp;#x27;Bob&amp;#x27;, &amp;#x27;Tiff&amp;#x27;, &amp;#x27;Bruce&amp;#x27;, &amp;#x27;Alice&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   let numbers = [1, 2, 1, 5, 6, 3]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   names.reduce(function (prev, cur, index, arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     if (cur in prev) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       prev[cur]++&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       prev[cur] = 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     console.log(prev)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     return prev&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;, &amp;#123;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   let a = numbers.reduce((prev, cur, index, arr) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     console.log(prev, &amp;#x27;prevq&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     return prev + cur&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   console.log(a, &amp;#x27;a&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
         <updated>2022-10-11T02:45:22.316Z</updated>
-    </entry>
-    <entry>
-        <id>https://zhixin-zou.github.io/2022/10/10/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/10/hello-world/"/>
-        <content type="html">&lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
-</content>
-        <updated>2022-10-10T02:27:56.623Z</updated>
     </entry>
 </feed>

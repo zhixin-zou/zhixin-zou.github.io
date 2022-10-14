@@ -27,12 +27,12 @@
   <meta name="keywords" content="关键词1,关键词2" />
 
 
-<link rel="canonical" href="https://zhixin-zou.github.io/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/">
+<link rel="canonical" href="https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
 
 
   <title>
- |
+github pages + hexo搭建博客笔记 （一） |
 Yume Shoka = star belog</title>
 <meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,16 +60,16 @@ Yume Shoka = star belog</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
+  <h1 itemprop="name headline">github pages + hexo搭建博客笔记 （一）
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-10-13 11:00:56">
+  <span class="item" title="创建时间：2022-10-14 15:53:42">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-10-13T11:00:56+08:00">2022-10-13</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-10-14T15:53:42+08:00">2022-10-14</time>
   </span>
 </div>
 
@@ -102,12 +102,12 @@ Yume Shoka = star belog</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
         </ul>
       </div>
     </header>
@@ -136,7 +136,7 @@ Yume Shoka = star belog</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://zhixin-zou.github.io/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/">
+  <link itemprop="mainEntityOfPage" href="https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -151,22 +151,44 @@ Yume Shoka = star belog</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>一、新特性<br>
- 1、组合式 API—setup</p>
-<p>2、ref 创建响应式数据</p>
-<p>3、Teleport—“传送门”</p>
-<p>4、多根节点</p>
-<p>5、style 中使用变量</p>
-<p>二、差异<br>
- 1、v-if 和 v-for 的优先级</p>
-<p>2、.sync 修饰符</p>
-<p>3、全局 API</p>
-<p>4、Vue.prototype 替换为 config.globalProperties</p>
-<p>5、生命周期</p>
-<p>6、key 在 template 和 v-if 上的使用</p>
-<p>7、$listeners 被移除</p>
-<p>8、this</p>
-<p>9、typescript 支持</p>
+    <h1 id="准备工作"><a class="markdownIt-Anchor" href="#准备工作">#</a> 准备工作</h1>
+<ol>
+<li>Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
+<li>Git</li>
+</ol>
+<h1 id="搭建步骤"><a class="markdownIt-Anchor" href="#搭建步骤">#</a> 搭建步骤</h1>
+<h2 id="一-安装hexo生成网站文件"><a class="markdownIt-Anchor" href="#一-安装hexo生成网站文件">#</a> 一、安装 Hexo 生成网站文件</h2>
+<p>在文件夹中右击 git brash Here<br>
+<img data-src="https://note.youdao.com/yws/res/167/WEBRESOURCE8211eb5c171d85d9ad2569109314f5fc" alt="image.png"><br>
+ <code>$ npm install -g hexo-cli</code> <br>
+ 当然如果对 npm 比较熟悉可以使用     <code>$ npm install hexo</code>  安装 hexo。<br>
+安装以后，可以使用以下两种方式执行 Hexo：</p>
+<ol>
+<li><code>npx hexo &lt;command&gt;</code></li>
+<li>将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用  <code>hexo &lt;command&gt;</code></li>
+</ol>
+<p>这里我使用的是非全局安装方式搭建，安装完 hexo 后使用命令 <code>npx hexo init &lt;自己取名&gt;</code>  这里我以 belog 为例<br>
+<img data-src="https://note.youdao.com/yws/res/186/WEBRESOURCE48686d87123a9a3921b4ae6b5c19286c" alt="image.png"><br>
+ 初始化后会文件夹会出现如下代码<br>
+<img data-src="https://note.youdao.com/yws/res/191/WEBRESOURCEf7ccc6558ff1b3d2220fd63bda9a244b" alt="image.png"><br>
+ 然后  <code>cd belog</code>  进入文件夹<br>
+<img data-src="https://note.youdao.com/yws/res/194/WEBRESOURCE71272dbfa3d9e2a34d46ae40421b07ee" alt="image.png"></p>
+<h2 id="二-github-pages"><a class="markdownIt-Anchor" href="#二-github-pages">#</a> 二、 GitHub Pages</h2>
+<p>首先登陆你的 github 账号，新建一个库<br>
+<img data-src="https://note.youdao.com/yws/res/202/WEBRESOURCE290b7ecf0d6cb8cbb4a57b5ed94b4dfb" alt="image.png"><br>
+ 进入建库界面<br>
+<img data-src="https://note.youdao.com/yws/res/207/WEBRESOURCEf4df98f5c0dd16416c3b281281bf2a5d" alt="image.png"><br>
+ 这里的存储库名称及 Repository name 要命名为 <code>&lt;user&gt;.github.io</code>  我这里因为博客已经搭建完成，所以显示的该账号已存在 zhixin-zou.github.io 仓库。小伙伴们第一次建的话直接点底下的 Create repository 就行。</p>
+<h2 id="将-hexo-部署到-github-pages"><a class="markdownIt-Anchor" href="#将-hexo-部署到-github-pages">#</a> 将 Hexo 部署到 GitHub Pages</h2>
+<p>回到 git bash 在命令行安装 hexo-deployer-git 运行  <code>npm i hexo-deployer-git</code> <br>
+<img data-src="https://note.youdao.com/yws/res/223/WEBRESOURCEc358d5d72bc2c789daeda36beb26a2a3" alt="image.png"><br>
+ 用代码编辑器打开 belog 文件夹，找到 <code>_config.yml</code>  文件<br>
+<img data-src="https://note.youdao.com/yws/res/239/WEBRESOURCEbb8e485c4cdd34ae468b92663ead5eff" alt="image.png"><br>
+<img data-src="https://note.youdao.com/yws/res/230/WEBRESOURCEc8766b0cdccc31887be37d53063ff9f0" alt="image.png"><br>
+ 将 url 换做你的地址，deploy 部分更换配置如下</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/&lt;username&gt;/&lt;project&gt;</span><br><span class="line"># example, https://github.com/hexojs/hexojs.github.io</span><br><span class="line">branch: gh-pages</span><br></pre></td></tr></table></figure>
+<p>然后运行  <code>hexo clean &amp;&amp; hexo deploy</code>  。<br>
+最后查看 <span class="exturl" data-url="aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==">username.github.io</span> 上的网页是否部署成功。</p>
 
   </div>
 
@@ -178,7 +200,7 @@ Yume Shoka = star belog</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-10-13 11:00:45" itemprop="dateModified" datetime="2022-10-13T11:00:45+08:00">2022-10-13</time>
+    <time title="修改时间：2022-10-14 15:59:17" itemprop="dateModified" datetime="2022-10-14T15:59:17+08:00">2022-10-14</time>
   </span>
 </div>
 
@@ -214,7 +236,7 @@ Yume Shoka = star belog</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://zhixin-zou.github.io/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" title="">https://zhixin-zou.github.io/2022/10/13/vue2和vue3区别/</a>
+    <a href="https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="github pages + hexo搭建博客笔记 （一）">https://zhixin-zou.github.io/2022/10/14/博客搭建笔记/github pages   hexo搭建博客/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -233,10 +255,10 @@ Yume Shoka = star belog</title>
     <div class="item left">
       
 
-  <a href="/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli3sbvtj20zk0m8x6p.jpg" title="js reduce方法">
+  <a href="/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="vue2和vue3区别">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>js reduce方法</h3>
+  <h3>vue2和vue3区别</h3>
   </a>
 
     </div>
@@ -257,6 +279,7 @@ Yume Shoka = star belog</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text"> 准备工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.</span> <span class="toc-text"> 搭建步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85hexo%E7%94%9F%E6%88%90%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6"><span class="toc-number">2.1.</span> <span class="toc-text"> 一、安装 Hexo 生成网站文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-github-pages"><span class="toc-number">2.2.</span> <span class="toc-text"> 二、 GitHub Pages</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86-hexo-%E9%83%A8%E7%BD%B2%E5%88%B0-github-pages"><span class="toc-number">2.3.</span> <span class="toc-text"> 将 Hexo 部署到 GitHub Pages</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -278,6 +301,7 @@ Yume Shoka = star belog</title>
 </nav>
 
 <div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3poaXhpbi16b3U=" title="https:&#x2F;&#x2F;github.com&#x2F;zhixin-zou"><i class="ic i-github"></i></span>
 </div>
 
 <ul class="menu">
@@ -285,6 +309,11 @@ Yume Shoka = star belog</title>
     
   <li class="item">
     <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
   </li>
 
 
@@ -323,7 +352,7 @@ Yume Shoka = star belog</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" title="未命名">未命名</a></span>
+    <span><a href="/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">js reduce方法</a></span>
   </li>
 
       
@@ -332,7 +361,7 @@ Yume Shoka = star belog</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/10/10/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="github pages + hexo搭建博客笔记 （一）">github pages + hexo搭建博客笔记 （一）</a></span>
   </li>
 
       
@@ -341,7 +370,7 @@ Yume Shoka = star belog</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">js reduce方法</a></span>
+    <span><a href="/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" title="vue2和vue3区别">vue2和vue3区别</a></span>
   </li>
 
   </ul>
@@ -362,6 +391,18 @@ Yume Shoka = star belog</title>
     </span>
     <span class="author" itemprop="copyrightHolder">ZhiXin Zou @ Yume Shoka</span>
   </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">2k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2 分钟</span>
+  </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
   </div>
@@ -372,7 +413,7 @@ Yume Shoka = star belog</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2022/10/13/vue2和vue3区别/',
+    path: '2022/10/14/博客搭建笔记/github pages   hexo搭建博客/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"

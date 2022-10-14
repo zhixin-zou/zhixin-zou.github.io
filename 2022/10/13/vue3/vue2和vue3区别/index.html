@@ -27,12 +27,12 @@
   <meta name="keywords" content="关键词1,关键词2" />
 
 
-<link rel="canonical" href="https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/">
+<link rel="canonical" href="https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/">
 
 
 
   <title>
-js reduce方法 |
+vue2和vue3区别 |
 Yume Shoka = star belog</title>
 <meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,16 +60,16 @@ Yume Shoka = star belog</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">js reduce方法
+  <h1 itemprop="name headline">vue2和vue3区别
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-10-11 10:45:22">
+  <span class="item" title="创建时间：2022-10-13 11:00:56">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-10-11T10:45:22+08:00">2022-10-11</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-10-13T11:00:56+08:00">2022-10-13</time>
   </span>
 </div>
 
@@ -102,12 +102,12 @@ Yume Shoka = star belog</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -136,7 +136,7 @@ Yume Shoka = star belog</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/">
+  <link itemprop="mainEntityOfPage" href="https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -151,16 +151,22 @@ Yume Shoka = star belog</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>reduce 方法 (累加器)<br>
-array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p>
-<p>function (total, currentValue, currentIndex, arr) 是一个回调函数</p>
-<p>total 必填，计算结果的返回值</p>
-<p>currentValue 当前正在处理的元素</p>
-<p>currentIndex 当前处理元素的下标</p>
-<p>arr 当前数组</p>
-<p>initialValue 设置初始值，相当于 total 的初始值</p>
-<p>实例</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">let names = [&#x27;Alice&#x27;, &#x27;Bob&#x27;, &#x27;Tiff&#x27;, &#x27;Bruce&#x27;, &#x27;Alice&#x27;]</span><br><span class="line">   let numbers = [1, 2, 1, 5, 6, 3]</span><br><span class="line">   names.reduce(function (prev, cur, index, arr) &#123;</span><br><span class="line">     if (cur in prev) &#123;</span><br><span class="line">       prev[cur]++</span><br><span class="line">     &#125; else &#123;</span><br><span class="line">       prev[cur] = 1</span><br><span class="line">     &#125;</span><br><span class="line">     console.log(prev)</span><br><span class="line">     return prev</span><br><span class="line">   &#125;, &#123;&#125;)</span><br><span class="line">   let a = numbers.reduce((prev, cur, index, arr) =&gt; &#123;</span><br><span class="line">     console.log(prev, &#x27;prevq&#x27;)</span><br><span class="line">     return prev + cur</span><br><span class="line">   &#125;)</span><br><span class="line">   console.log(a, &#x27;a&#x27;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <p>一、新特性<br>
+ 1、组合式 API—setup</p>
+<p>2、ref 创建响应式数据</p>
+<p>3、Teleport—“传送门”</p>
+<p>4、多根节点</p>
+<p>5、style 中使用变量</p>
+<p>二、差异<br>
+ 1、v-if 和 v-for 的优先级</p>
+<p>2、.sync 修饰符</p>
+<p>3、全局 API</p>
+<p>4、Vue.prototype 替换为 config.globalProperties</p>
+<p>5、生命周期</p>
+<p>6、key 在 template 和 v-if 上的使用</p>
+<p>7、$listeners 被移除</p>
+<p>8、this</p>
+<p>9、typescript 支持</p>
 
   </div>
 
@@ -172,7 +178,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-10-11 10:57:51" itemprop="dateModified" datetime="2022-10-11T10:57:51+08:00">2022-10-11</time>
+    <time title="修改时间：2022-10-13 15:01:17" itemprop="dateModified" datetime="2022-10-13T15:01:17+08:00">2022-10-13</time>
   </span>
 </div>
 
@@ -208,7 +214,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://zhixin-zou.github.io/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">https://zhixin-zou.github.io/2022/10/11/js reduce方法/</a>
+    <a href="https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" title="vue2和vue3区别">https://zhixin-zou.github.io/2022/10/13/vue3/vue2和vue3区别/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -227,20 +233,20 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
     <div class="item left">
       
 
-  <a href="/2022/10/10/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="Hello World">
+  <a href="/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj61ylzj20zk0m8b29.jpg" title="js reduce方法">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Hello World</h3>
+  <h3>js reduce方法</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="未命名">
+  <a href="/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljgocqbj20zk0m8e81.jpg" title="github pages + hexo搭建博客笔记 （一）">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>未命名</h3>
+  <h3>github pages + hexo搭建博客笔记 （一）</h3>
   </a>
 
     </div>
@@ -280,6 +286,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
 </nav>
 
 <div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3poaXhpbi16b3U=" title="https:&#x2F;&#x2F;github.com&#x2F;zhixin-zou"><i class="ic i-github"></i></span>
 </div>
 
 <ul class="menu">
@@ -287,6 +294,11 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
     
   <li class="item">
     <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
   </li>
 
 
@@ -298,12 +310,12 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2022/10/10/hello-world/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+        <a href="/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+        <a href="/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -327,7 +339,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/10/13/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" title="未命名">未命名</a></span>
+    <span><a href="/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/github%20pages%20%20%20hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" title="github pages + hexo搭建博客笔记 （一）">github pages + hexo搭建博客笔记 （一）</a></span>
   </li>
 
       
@@ -336,7 +348,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/10/10/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/" title="vue2和vue3区别">vue2和vue3区别</a></span>
   </li>
 
       
@@ -345,7 +357,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/10/11/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">js reduce方法</a></span>
+    <span><a href="/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">js reduce方法</a></span>
   </li>
 
   </ul>
@@ -366,6 +378,18 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
     </span>
     <span class="author" itemprop="copyrightHolder">ZhiXin Zou @ Yume Shoka</span>
   </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">2k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2 分钟</span>
+  </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
   </div>
@@ -376,7 +400,7 @@ array.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2022/10/11/js reduce方法/',
+    path: '2022/10/13/vue3/vue2和vue3区别/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"
