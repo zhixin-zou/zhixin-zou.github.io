@@ -16,7 +16,7 @@
 &lt;h1 id=&#34;搭建步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭建步骤&#34;&gt;#&lt;/a&gt; 搭建步骤&lt;/h1&gt;
 &lt;h2 id=&#34;一-安装hexo生成网站文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-安装hexo生成网站文件&#34;&gt;#&lt;/a&gt; 一、安装 Hexo 生成网站文件&lt;/h2&gt;
 &lt;p&gt;在文件夹中右击 git brash Here&lt;br&gt;
-&lt;img data-src=&#34;https://note.youdao.com/yws/res/167/WEBRESOURCE8211eb5c171d85d9ad2569109314f5fc&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+&lt;img data-src=&#34;./images/belogImg1.png&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
  &lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt; &lt;br&gt;
  当然如果对 npm 比较熟悉可以使用     &lt;code&gt;$ npm install hexo&lt;/code&gt;  安装 hexo。&lt;br&gt;
 安装以后，可以使用以下两种方式执行 Hexo：&lt;/p&gt;
