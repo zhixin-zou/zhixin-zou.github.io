@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "star belog • All posts by \"js\" category",
+    "description": "",
+    "home_page_url": "https://zhixin-zou.github.io",
+    "items": [
+        {
+            "id": "https://zhixin-zou.github.io/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/",
+            "url": "https://zhixin-zou.github.io/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/",
+            "title": "js reduce方法",
+            "date_published": "2022-10-11T02:45:22.316Z",
+            "content_html": "<p>reduce 方法 (累加器)<br>\narray.reduce(function(total, currentValue, currentIndex, arr), initialValue);</p>\n<p>function (total, currentValue, currentIndex, arr) 是一个回调函数</p>\n<p>total 必填，计算结果的返回值</p>\n<p>currentValue 当前正在处理的元素</p>\n<p>currentIndex 当前处理元素的下标</p>\n<p>arr 当前数组</p>\n<p>initialValue 设置初始值，相当于 total 的初始值</p>\n<p>实例</p>\n<p><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br><span class=\"line\">15</span><br><span class=\"line\">16</span><br><span class=\"line\">17</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">let names = [&#x27;Alice&#x27;, &#x27;Bob&#x27;, &#x27;Tiff&#x27;, &#x27;Bruce&#x27;, &#x27;Alice&#x27;]</span><br><span class=\"line\">   let numbers = [1, 2, 1, 5, 6, 3]</span><br><span class=\"line\">   names.reduce(function (prev, cur, index, arr) &#123;</span><br><span class=\"line\">     if (cur in prev) &#123;</span><br><span class=\"line\">       prev[cur]++</span><br><span class=\"line\">     &#125; else &#123;</span><br><span class=\"line\">       prev[cur] = 1</span><br><span class=\"line\">     &#125;</span><br><span class=\"line\">     console.log(prev)</span><br><span class=\"line\">     return prev</span><br><span class=\"line\">   &#125;, &#123;&#125;)</span><br><span class=\"line\">   let a = numbers.reduce((prev, cur, index, arr) =&gt; &#123;</span><br><span class=\"line\">     console.log(prev, &#x27;prevq&#x27;)</span><br><span class=\"line\">     return prev + cur</span><br><span class=\"line\">   &#125;)</span><br><span class=\"line\">   console.log(a, &#x27;a&#x27;)</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure></p>\n",
+            "tags": []
+        }
+    ]
+}
