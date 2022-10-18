@@ -3,7 +3,16 @@
     <id>https://zhixin-zou.github.io</id>
     <title>star belog</title>
     <link href="https://zhixin-zou.github.io" />
-    <updated>2022-10-14T07:53:42.572Z</updated>
+    <updated>2022-10-17T02:46:31.000Z</updated>
+    <category term="belog" />
+    <entry>
+        <id>https://zhixin-zou.github.io/2022/10/17/test1/test1/</id>
+        <title>test1</title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/17/test1/test1/"/>
+        <content type="html">&lt;p&gt;&lt;/p&gt;
+</content>
+        <updated>2022-10-17T02:46:31.000Z</updated>
+    </entry>
     <entry>
         <id>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
         <title>github pages + hexo搭建博客笔记 （一）</title>
@@ -47,6 +56,7 @@
  然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
 最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
 </content>
+        <category term="belog" />
         <updated>2022-10-14T07:53:42.572Z</updated>
     </entry>
     <entry>

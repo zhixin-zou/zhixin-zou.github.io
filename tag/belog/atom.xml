@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhixin-zou.github.io</id>
-    <title>star belog • Posts by &#34;博客搭建笔记&#34; category</title>
+    <title>star belog • Posts by &#34;belog&#34; tag</title>
     <link href="https://zhixin-zou.github.io" />
     <updated>2022-10-14T07:53:42.572Z</updated>
     <category term="belog" />

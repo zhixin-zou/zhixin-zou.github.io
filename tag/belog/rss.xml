@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zhixin-zou.github.io</id>
-    <title>star belog • Posts by &#34;博客搭建笔记&#34; category</title>
-    <link href="https://zhixin-zou.github.io" />
-    <updated>2022-10-14T07:53:42.572Z</updated>
-    <category term="belog" />
-    <entry>
-        <id>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
-        <title>github pages + hexo搭建博客笔记 （一）</title>
-        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-        <content type="html">&lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
+<rss version="2.0">
+    <channel>
+        <title>star belog • Posts by &#34;belog&#34; tag</title>
+        <link>https://zhixin-zou.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 14 Oct 2022 15:53:42 +0800</pubDate>
+        <lastBuildDate>Fri, 14 Oct 2022 15:53:42 +0800</lastBuildDate>
+        <category>belog</category>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
+            <title>github pages + hexo搭建博客笔记 （一）</title>
+            <link>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
+            <category>belog</category>
+            <pubDate>Fri, 14 Oct 2022 15:53:42 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
 &lt;li&gt;Git&lt;/li&gt;
@@ -47,8 +52,7 @@
  &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# example, https://github.com/hexojs/hexojs.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branch: gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
  然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
 最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
-</content>
-        <category term="belog" />
-        <updated>2022-10-14T07:53:42.572Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
