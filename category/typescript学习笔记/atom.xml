@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhixin-zou.github.io</id>
+    <title>star belog • Posts by &#34;typescript学习笔记&#34; category</title>
+    <link href="https://zhixin-zou.github.io" />
+    <updated>2022-10-18T09:43:59.754Z</updated>
+    <category term="belog" />
+    <category term="ts" />
+    <entry>
+        <id>https://zhixin-zou.github.io/2022/10/18/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E7%B1%BB%E5%9E%8B/</id>
+        <title>typeScript类型</title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/18/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E7%B1%BB%E5%9E%8B/"/>
+        <content type="html"></content>
+        <category term="ts" />
+        <updated>2022-10-18T09:43:59.754Z</updated>
+    </entry>
+</feed>

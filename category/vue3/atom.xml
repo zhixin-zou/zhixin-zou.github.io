@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhixin-zou.github.io</id>
+    <title>star belog • Posts by &#34;vue3&#34; category</title>
+    <link href="https://zhixin-zou.github.io" />
+    <updated>2022-10-13T03:00:56.158Z</updated>
+    <category term="belog" />
+    <category term="ts" />
+    <entry>
+        <id>https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</id>
+        <title>vue2和vue3区别</title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/"/>
+        <content type="html">&lt;p&gt;一、新特性&lt;br&gt;
+ 1、组合式 API---setup&lt;/p&gt;
+&lt;p&gt;2、ref 创建响应式数据&lt;/p&gt;
+&lt;p&gt;3、Teleport---“传送门”&lt;/p&gt;
+&lt;p&gt;4、多根节点&lt;/p&gt;
+&lt;p&gt;5、style 中使用变量&lt;/p&gt;
+&lt;p&gt;二、差异&lt;br&gt;
+ 1、v-if 和 v-for 的优先级&lt;/p&gt;
+&lt;p&gt;2、.sync 修饰符&lt;/p&gt;
+&lt;p&gt;3、全局 API&lt;/p&gt;
+&lt;p&gt;4、Vue.prototype 替换为 config.globalProperties&lt;/p&gt;
+&lt;p&gt;5、生命周期&lt;/p&gt;
+&lt;p&gt;6、key 在 template 和 v-if 上的使用&lt;/p&gt;
+&lt;p&gt;7、$listeners 被移除&lt;/p&gt;
+&lt;p&gt;8、this&lt;/p&gt;
+&lt;p&gt;9、typescript 支持&lt;/p&gt;
+</content>
+        <updated>2022-10-13T03:00:56.158Z</updated>
+    </entry>
+</feed>

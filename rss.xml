@@ -5,16 +5,17 @@
         <link>https://zhixin-zou.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Mon, 17 Oct 2022 10:46:31 +0800</pubDate>
-        <lastBuildDate>Mon, 17 Oct 2022 10:46:31 +0800</lastBuildDate>
+        <pubDate>Tue, 18 Oct 2022 17:43:59 +0800</pubDate>
+        <lastBuildDate>Tue, 18 Oct 2022 17:43:59 +0800</lastBuildDate>
         <category>belog</category>
+        <category>ts</category>
         <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/17/test1/test1/</guid>
-            <title>test1</title>
-            <link>https://zhixin-zou.github.io/2022/10/17/test1/test1/</link>
-            <pubDate>Mon, 17 Oct 2022 10:46:31 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;/p&gt;
- ]]></description>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/18/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E7%B1%BB%E5%9E%8B/</guid>
+            <title>typeScript类型</title>
+            <link>https://zhixin-zou.github.io/2022/10/18/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E7%B1%BB%E5%9E%8B/</link>
+            <category>ts</category>
+            <pubDate>Tue, 18 Oct 2022 17:43:59 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>

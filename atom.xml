@@ -3,15 +3,16 @@
     <id>https://zhixin-zou.github.io</id>
     <title>star belog</title>
     <link href="https://zhixin-zou.github.io" />
-    <updated>2022-10-17T02:46:31.000Z</updated>
+    <updated>2022-10-18T09:43:59.754Z</updated>
     <category term="belog" />
+    <category term="ts" />
     <entry>
-        <id>https://zhixin-zou.github.io/2022/10/17/test1/test1/</id>
-        <title>test1</title>
-        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/17/test1/test1/"/>
-        <content type="html">&lt;p&gt;&lt;/p&gt;
-</content>
-        <updated>2022-10-17T02:46:31.000Z</updated>
+        <id>https://zhixin-zou.github.io/2022/10/18/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E7%B1%BB%E5%9E%8B/</id>
+        <title>typeScript类型</title>
+        <link rel="alternate" href="https://zhixin-zou.github.io/2022/10/18/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E7%B1%BB%E5%9E%8B/"/>
+        <content type="html"></content>
+        <category term="ts" />
+        <updated>2022-10-18T09:43:59.754Z</updated>
     </entry>
     <entry>
         <id>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
