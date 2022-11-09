@@ -9,7 +9,7 @@
     <category term="belog" />
     <entry>
         <id>https://zhixin-zou.github.io/2022/11/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
-        <title>github pages + hexo搭建博客笔记 （一）</title>
+        <title>github pages + hexo搭建博客笔记 （二）</title>
         <link rel="alternate" href="https://zhixin-zou.github.io/2022/11/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
         <content type="html">&lt;h1 id=&#34;hexo搭建博客笔记-shoka主题配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo搭建博客笔记-shoka主题配置&#34;&gt;#&lt;/a&gt; hexo 搭建博客笔记 （shoka 主题配置）&lt;/h1&gt;
 &lt;h3 id=&#34;1-theme-shoka-依赖以下-hexo-插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-theme-shoka-依赖以下-hexo-插件&#34;&gt;#&lt;/a&gt; 1、 Theme Shoka 依赖以下 Hexo 插件&lt;/h3&gt;
