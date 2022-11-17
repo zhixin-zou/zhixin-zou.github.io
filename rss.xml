@@ -5,11 +5,38 @@
         <link>https://zhixin-zou.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Mon, 14 Nov 2022 17:35:28 +0800</pubDate>
-        <lastBuildDate>Mon, 14 Nov 2022 17:35:28 +0800</lastBuildDate>
+        <pubDate>Thu, 17 Nov 2022 14:51:32 +0800</pubDate>
+        <lastBuildDate>Thu, 17 Nov 2022 14:51:32 +0800</lastBuildDate>
         <category>python</category>
-        <category>belog</category>
         <category>ts</category>
+        <category>belog</category>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</guid>
+            <title></title>
+            <link>https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</link>
+            <pubDate>Thu, 17 Nov 2022 14:51:32 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;ts类型推论-联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论-联合类型&#34;&gt;#&lt;/a&gt; ts 类型推论、联合类型&lt;/h1&gt;
+&lt;h2 id=&#34;ts类型推论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论&#34;&gt;#&lt;/a&gt; ts 类型推论&lt;/h2&gt;
+&lt;p&gt;如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型。&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let stringType = &amp;#x27;test&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = &amp;#x27;teststring&amp;#x27;     // 编译通过&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = 1                // 编译报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 其实上述代码等价于&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let stringType: string = &amp;#x27;test&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = &amp;#x27;teststring&amp;#x27;     // 编译通过&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = 1                // 编译报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论。&lt;/p&gt;
+&lt;p&gt;如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查：&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let anyType;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anyType = &amp;#x27;teststring&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anyType = 1;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#联合类型&#34;&gt;#&lt;/a&gt; 联合类型&lt;/h2&gt;
+&lt;p&gt;联合类型（Union Types）表示取值可以为多种类型中的一种。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let numberString: number | string&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = 1           // 编译成功&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = &amp;#x27;1&amp;#x27;         // 编译成功&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = true        // 报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 联合类型使用 | 分隔每个类型，可以将 | 理解为或.&lt;/p&gt;
+&lt;h5 id=&#34;访问联类型的属性和方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#访问联类型的属性和方法&#34;&gt;#&lt;/a&gt; 访问联类型的属性和方法&lt;/h5&gt;
+&lt;p&gt;当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function getLength(something: string): number &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.length; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function getLength2(something: string | number): number &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.length;      //  报错&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function getString(something: string | number): string &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 对比上面三个函数&lt;br&gt;
+ length 是 string 的属性&lt;br&gt;
+ length 不是 string 和 number 的共有属性，所以 getLength2 会报错。&lt;br&gt;
+访问 string 和 number 的共有属性是没问题的 getString 即可编译通过。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/14/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</guid>
             <title>typeScript基础类型</title>
