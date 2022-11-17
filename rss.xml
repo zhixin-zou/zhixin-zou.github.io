@@ -8,12 +8,13 @@
         <pubDate>Thu, 17 Nov 2022 14:51:32 +0800</pubDate>
         <lastBuildDate>Thu, 17 Nov 2022 14:51:32 +0800</lastBuildDate>
         <category>python</category>
-        <category>belog</category>
         <category>ts</category>
+        <category>belog</category>
         <item>
             <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</guid>
-            <title></title>
+            <title>ts类型推论、联合类型</title>
             <link>https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</link>
+            <category>ts</category>
             <pubDate>Thu, 17 Nov 2022 14:51:32 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;ts类型推论-联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论-联合类型&#34;&gt;#&lt;/a&gt; ts 类型推论、联合类型&lt;/h1&gt;
 &lt;h2 id=&#34;ts类型推论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论&#34;&gt;#&lt;/a&gt; ts 类型推论&lt;/h2&gt;
