@@ -5,16 +5,16 @@
         <link>https://zhixin-zou.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 13 Oct 2022 11:00:56 +0800</pubDate>
-        <lastBuildDate>Thu, 13 Oct 2022 11:00:56 +0800</lastBuildDate>
-        <category>python</category>
+        <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Dec 2022 19:31:13 +0800</lastBuildDate>
         <category>ts</category>
+        <category>python</category>
         <category>belog</category>
         <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</guid>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</guid>
             <title>vue2和vue3区别</title>
-            <link>https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</link>
-            <pubDate>Thu, 13 Oct 2022 11:00:56 +0800</pubDate>
+            <link>https://zhixin-zou.github.io/2022/12/06/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</link>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一、新特性&lt;br&gt;
  1、组合式 API---setup&lt;/p&gt;
 &lt;p&gt;2、ref 创建响应式数据&lt;/p&gt;

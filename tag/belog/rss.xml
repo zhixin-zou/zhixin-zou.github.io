@@ -5,17 +5,63 @@
         <link>https://zhixin-zou.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 09 Nov 2022 14:44:20 +0800</pubDate>
-        <lastBuildDate>Wed, 09 Nov 2022 14:44:20 +0800</lastBuildDate>
-        <category>python</category>
+        <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Dec 2022 19:31:13 +0800</lastBuildDate>
         <category>ts</category>
+        <category>python</category>
         <category>belog</category>
         <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
-            <title>github pages + hexo搭建博客笔记 （二）</title>
-            <link>https://zhixin-zou.github.io/2022/11/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
+            <title>github pages + hexo搭建博客笔记 （一）</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
             <category>belog</category>
-            <pubDate>Wed, 09 Nov 2022 14:44:20 +0800</pubDate>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;搭建步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建步骤&#34;&gt;#&lt;/a&gt; 搭建步骤&lt;/h1&gt;
+&lt;h2 id=&#34;一-安装hexo生成网站文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-安装hexo生成网站文件&#34;&gt;#&lt;/a&gt; 一、安装 Hexo 生成网站文件&lt;/h2&gt;
+&lt;p&gt;在文件夹中右击 git brash Here&lt;br&gt;
+&lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg1.png&#34; class&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt; &lt;br&gt;
+ 当然如果对 npm 比较熟悉可以使用     &lt;code&gt;$ npm install hexo&lt;/code&gt;  安装 hexo。&lt;br&gt;
+安装以后，可以使用以下两种方式执行 Hexo：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;npx hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用  &lt;code&gt;hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里我使用的是非全局安装方式搭建，安装完 hexo 后使用命令 &lt;code&gt;npx hexo init &amp;lt;自己取名&amp;gt;&lt;/code&gt;  这里我以 belog 为例&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg2.png&#34; class&gt;&lt;/p&gt;
+&lt;p&gt;初始化后会文件夹会出现如下代码&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg3.png&#34; class&gt;&lt;br&gt;
+ 然后  &lt;code&gt;cd belog&lt;/code&gt;  进入文件夹&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg4.png&#34; class&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-github-pages&#34;&gt;#&lt;/a&gt; 二、 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;首先登陆你的 github 账号，新建一个库&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg5.png&#34; class&gt;&lt;br&gt;
+ 进入建库界面&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg6.png&#34; class&gt;&lt;br&gt;
+ 这里的存储库名称及 Repository name 要命名为 &lt;code&gt;&amp;lt;user&amp;gt;.github.io&lt;/code&gt;  我这里因为博客已经搭建完成，所以显示的该账号已存在 zhixin-zou.github.io 仓库。小伙伴们第一次建的话直接点底下的 Create repository 就行。&lt;/p&gt;
+&lt;h2 id=&#34;将-hexo-部署到-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将-hexo-部署到-github-pages&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;回到 git bash 在命令行安装 hexo-deployer-git 运行  &lt;code&gt;npm i hexo-deployer-git&lt;/code&gt; &lt;br&gt;
+&lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg7.png&#34; class&gt;&lt;br&gt;
+ 用代码编辑器打开 belog 文件夹，找到 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg8.png&#34; class&gt;&lt;br&gt;
+&lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg9.png&#34; class&gt;&lt;br&gt;
+ 将 url 换做你的地址，deploy 部分更换配置如下&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# example, https://github.com/hexojs/hexojs.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branch: gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
+最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
+            <title>github pages + hexo搭建博客笔记 （二）</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
+            <category>belog</category>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;hexo搭建博客笔记-shoka主题配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo搭建博客笔记-shoka主题配置&#34;&gt;#&lt;/a&gt; hexo 搭建博客笔记 （shoka 主题配置）&lt;/h1&gt;
 &lt;h3 id=&#34;1-theme-shoka-依赖以下-hexo-插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-theme-shoka-依赖以下-hexo-插件&#34;&gt;#&lt;/a&gt; 1、 Theme Shoka 依赖以下 Hexo 插件&lt;/h3&gt;
 &lt;table&gt;
@@ -84,52 +130,6 @@ puppeteer 主要是用来渲染 mermaid 流程图，只要文章中不使用 mer
 &lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;algolia:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  appId: #Your appId&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  apiKey: #Your apiKey&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  adminApiKey: #Your adminApiKey&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  chunkSize: 5000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  indexName: #&amp;quot;shoka&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fields:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - title #必须配置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - path #必须配置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - categories #推荐配置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - content:strip:truncate,0,2000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - gallery&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - photos&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    - tags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h4 id=&#34;feed-配置建议&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#feed-配置建议&#34;&gt;#&lt;/a&gt; feed 配置建议&lt;/h4&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;keywords: #站点关键词，用 “,” 分隔&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;feed:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    limit: 20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    order_by: &amp;quot;-date&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    tag_dir: false&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    category_dir: false&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    rss:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        enable: true&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        template: &amp;quot;themes/shoka/layout/_alternate/rss.ejs&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        output: &amp;quot;rss.xml&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    atom:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        enable: true&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        template: &amp;quot;themes/shoka/layout/_alternate/atom.ejs&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        output: &amp;quot;atom.xml&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    jsonFeed:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        enable: true&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        template: &amp;quot;themes/shoka/layout/_alternate/json.ejs&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        output: &amp;quot;feed.json&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
-            <title>github pages + hexo搭建博客笔记 （一）</title>
-            <link>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
-            <category>belog</category>
-            <pubDate>Fri, 14 Oct 2022 15:53:42 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
-&lt;li&gt;Git&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;搭建步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建步骤&#34;&gt;#&lt;/a&gt; 搭建步骤&lt;/h1&gt;
-&lt;h2 id=&#34;一-安装hexo生成网站文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-安装hexo生成网站文件&#34;&gt;#&lt;/a&gt; 一、安装 Hexo 生成网站文件&lt;/h2&gt;
-&lt;p&gt;在文件夹中右击 git brash Here&lt;br&gt;
-&lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg1.png&#34; class&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt; &lt;br&gt;
- 当然如果对 npm 比较熟悉可以使用     &lt;code&gt;$ npm install hexo&lt;/code&gt;  安装 hexo。&lt;br&gt;
-安装以后，可以使用以下两种方式执行 Hexo：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;npx hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用  &lt;code&gt;hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;这里我使用的是非全局安装方式搭建，安装完 hexo 后使用命令 &lt;code&gt;npx hexo init &amp;lt;自己取名&amp;gt;&lt;/code&gt;  这里我以 belog 为例&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg2.png&#34; class&gt;&lt;/p&gt;
-&lt;p&gt;初始化后会文件夹会出现如下代码&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg3.png&#34; class&gt;&lt;br&gt;
- 然后  &lt;code&gt;cd belog&lt;/code&gt;  进入文件夹&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg4.png&#34; class&gt;&lt;/p&gt;
-&lt;h2 id=&#34;二-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-github-pages&#34;&gt;#&lt;/a&gt; 二、 GitHub Pages&lt;/h2&gt;
-&lt;p&gt;首先登陆你的 github 账号，新建一个库&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg5.png&#34; class&gt;&lt;br&gt;
- 进入建库界面&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg6.png&#34; class&gt;&lt;br&gt;
- 这里的存储库名称及 Repository name 要命名为 &lt;code&gt;&amp;lt;user&amp;gt;.github.io&lt;/code&gt;  我这里因为博客已经搭建完成，所以显示的该账号已存在 zhixin-zou.github.io 仓库。小伙伴们第一次建的话直接点底下的 Create repository 就行。&lt;/p&gt;
-&lt;h2 id=&#34;将-hexo-部署到-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将-hexo-部署到-github-pages&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 GitHub Pages&lt;/h2&gt;
-&lt;p&gt;回到 git bash 在命令行安装 hexo-deployer-git 运行  &lt;code&gt;npm i hexo-deployer-git&lt;/code&gt; &lt;br&gt;
-&lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg7.png&#34; class&gt;&lt;br&gt;
- 用代码编辑器打开 belog 文件夹，找到 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg8.png&#34; class&gt;&lt;br&gt;
-&lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg9.png&#34; class&gt;&lt;br&gt;
- 将 url 换做你的地址，deploy 部分更换配置如下&lt;br&gt;
- &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# example, https://github.com/hexojs/hexojs.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branch: gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
-最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

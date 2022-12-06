@@ -27,12 +27,12 @@
   <meta name="keywords" content="ts" />
 
 
-<link rel="canonical" href="https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">
+<link rel="canonical" href="https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/">
 
 
 
   <title>
-tsconfig.json相关配置 - typeScript学习笔记 |
+ts类型推论、联合类型 - typeScript学习笔记 |
 Yume Shoka = star belog</title>
 <meta name="generator" content="Hexo 5.4.2"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,7 +60,7 @@ Yume Shoka = star belog</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">tsconfig.json相关配置
+  <h1 itemprop="name headline">ts类型推论、联合类型
   </h1>
   
 <div class="meta">
@@ -102,12 +102,12 @@ Yume Shoka = star belog</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -138,7 +138,7 @@ Yume Shoka = star belog</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">
+  <link itemprop="mainEntityOfPage" href="https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -153,14 +153,26 @@ Yume Shoka = star belog</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="tsconfigjson相关配置"><a class="anchor" href="#tsconfigjson相关配置">#</a> tsconfig.json 相关配置</h1>
-<h2 id="include"><a class="anchor" href="#include">#</a> include</h2>
-<p>需要编译的相关文件 /** 文件目录 /* 所有文件<br>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;include&quot;: [</span><br><span class="line">  &quot;./src/**/*&quot;</span><br><span class="line">],</span><br></pre></td></tr></table></figure><br>
- 表示编译 src 目录下所有文件</p>
-<h2 id="compileroptions"><a class="anchor" href="#compileroptions">#</a> compilerOptions</h2>
-<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  // 编译器选项</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &quot;target&quot;: &quot;ES6&quot;, // 指定编译为js的版本，默认是ES3</span><br><span class="line">    &quot;module&quot;: &quot;ES6&quot;, //指定模块化规范</span><br><span class="line">//    &quot;lib&quot;: []</span><br><span class="line">    &quot;outDir&quot;: &quot;./dist&quot;, // 用来指定编译后文件所在目录</span><br><span class="line">//    &quot;outFile&quot;: &quot;&quot;, // 把全局作用域的代码合并到一个文件中</span><br><span class="line">    &quot;allowJs&quot;: false,</span><br><span class="line">    &quot;removeComments&quot;: true, // 编译后一出原有注释,</span><br><span class="line">    &quot;alwaysStrict&quot;: true, // 编译后js使用严格模式</span><br><span class="line">    &quot;noImplicitAny&quot;: true, // 是否允许出现隐式any</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><br>
- 具体情况可参照 <span class="exturl" data-url="aHR0cHM6Ly90eXBlc2NyaXB0LmJvb3Rjc3MuY29tL3RzY29uZmlnLWpzb24uaHRtbA==">https://typescript.bootcss.com/tsconfig-json.html</span> 以及 <span class="exturl" data-url="aHR0cDovL2pzb24uc2NoZW1hc3RvcmUub3JnL3RzY29uZmln">http://json.schemastore.org/tsconfig</span></p>
+    <h1 id="ts类型推论-联合类型"><a class="anchor" href="#ts类型推论-联合类型">#</a> ts 类型推论、联合类型</h1>
+<h2 id="ts类型推论"><a class="anchor" href="#ts类型推论">#</a> ts 类型推论</h2>
+<p>如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型。<br>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let stringType = &#x27;test&#x27;</span><br><span class="line"></span><br><span class="line">stringType = &#x27;teststring&#x27;     // 编译通过</span><br><span class="line">stringType = 1                // 编译报错</span><br></pre></td></tr></table></figure><br>
+ 其实上述代码等价于<br>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let stringType: string = &#x27;test&#x27;</span><br><span class="line"></span><br><span class="line">stringType = &#x27;teststring&#x27;     // 编译通过</span><br><span class="line">stringType = 1                // 编译报错</span><br></pre></td></tr></table></figure><br>
+TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论。</p>
+<p>如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查：<br>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let anyType;</span><br><span class="line">anyType = &#x27;teststring&#x27;;</span><br><span class="line">anyType = 1;</span><br></pre></td></tr></table></figure></p>
+<h2 id="联合类型"><a class="anchor" href="#联合类型">#</a> 联合类型</h2>
+<p>联合类型（Union Types）表示取值可以为多种类型中的一种。</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let numberString: number | string</span><br><span class="line"></span><br><span class="line">numberString = 1           // 编译成功</span><br><span class="line">numberString = &#x27;1&#x27;         // 编译成功</span><br><span class="line">numberString = true        // 报错</span><br></pre></td></tr></table></figure><br>
+ 联合类型使用 | 分隔每个类型，可以将 | 理解为或.</p>
+<h5 id="访问联类型的属性和方法"><a class="anchor" href="#访问联类型的属性和方法">#</a> 访问联类型的属性和方法</h5>
+<p>当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法：</p>
+<p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function getLength(something: string): number &#123;</span><br><span class="line">    return something.length; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getLength2(something: string | number): number &#123;</span><br><span class="line">    return something.length;      //  报错</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getString(something: string | number): string &#123;</span><br><span class="line">    return something.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>
+ 对比上面三个函数<br>
+ length 是 string 的属性<br>
+ length 不是 string 和 number 的共有属性，所以 getLength2 会报错。<br>
+访问 string 和 number 的共有属性是没问题的 getString 即可编译通过。</p>
 
       <div class="tags">
           <a href="/tags/ts/" rel="tag"><i class="ic i-tag"></i> ts</a>
@@ -175,9 +187,9 @@ Yume Shoka = star belog</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-12-06 17:40:34" itemprop="dateModified" datetime="2022-12-06T17:40:34+08:00">2022-12-06</time>
+    <time title="修改时间：2022-11-17 16:12:53" itemprop="dateModified" datetime="2022-11-17T16:12:53+08:00">2022-11-17</time>
   </span>
-  <span id="2022/12/06/typeScript学习笔记/tsconfig.json相关配置/" class="item leancloud_visitors" data-flag-title="tsconfig.json相关配置" title="阅读次数">
+  <span id="2022/12/06/typeScript学习笔记/ts类型推断、联合类型/" class="item leancloud_visitors" data-flag-title="ts类型推论、联合类型" title="阅读次数">
       <span class="icon">
         <i class="ic i-eye"></i>
       </span>
@@ -219,7 +231,7 @@ Yume Shoka = star belog</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" title="tsconfig.json相关配置">https://zhixin-zou.github.io/2022/12/06/typeScript学习笔记/tsconfig.json相关配置/</a>
+    <a href="https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/" title="ts类型推论、联合类型">https://zhixin-zou.github.io/2022/12/06/typeScript学习笔记/ts类型推断、联合类型/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -238,20 +250,20 @@ Yume Shoka = star belog</title>
     <div class="item left">
       
 
-  <a href="/2022/12/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljgocqbj20zk0m8e81.jpg" title="python">
+  <a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewkhf1zj20zk0m81kx.jpg" title="tsconfig.json相关配置">
   <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> python学习笔记</span>
-  <h3>python</h3>
+  <span class="category"><i class="ic i-flag"></i> typeScript学习笔记</span>
+  <h3>tsconfig.json相关配置</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciusoyjnj219g0u0x56.jpg" title="ts类型推论、联合类型">
+  <a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetlbztpj20zk0m84qp.jpg" title="TypeScript基础类型">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> typeScript学习笔记</span>
-  <h3>ts类型推论、联合类型</h3>
+  <h3>TypeScript基础类型</h3>
   </a>
 
     </div>
@@ -270,11 +282,11 @@ Yume Shoka = star belog</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#tsconfigjson%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> tsconfig.json 相关配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#include"><span class="toc-number">1.1.</span> <span class="toc-text"> include</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#compileroptions"><span class="toc-number">1.2.</span> <span class="toc-text"> compilerOptions</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E8%AE%BA-%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text"> ts 类型推论、联合类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E8%AE%BA"><span class="toc-number">1.1.</span> <span class="toc-text"> ts 类型推论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text"> 联合类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%BF%E9%97%AE%E8%81%94%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.0.0.1.</span> <span class="toc-text"> 访问联类型的属性和方法</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" rel="bookmark" title="tsconfig.json相关配置">tsconfig.json相关配置</a></li><li><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/" rel="bookmark" title="ts类型推论、联合类型">ts类型推论、联合类型</a></li><li><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" rel="bookmark" title="TypeScript基础类型">TypeScript基础类型</a></li>
+          <li><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" rel="bookmark" title="tsconfig.json相关配置">tsconfig.json相关配置</a></li><li class="active"><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/" rel="bookmark" title="ts类型推论、联合类型">ts类型推论、联合类型</a></li><li><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" rel="bookmark" title="TypeScript基础类型">TypeScript基础类型</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -362,12 +374,12 @@ Yume Shoka = star belog</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2022/12/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+        <a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+        <a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -385,6 +397,46 @@ Yume Shoka = star belog</title>
 <div class="rpost pjax">
   <h2>随机文章</h2>
   <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/js/" title="分类于 js">js</a>
+</div>
+
+    <span><a href="/2022/12/06/js/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">js reduce方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 typeScript学习笔记">typeScript学习笔记</a>
+</div>
+
+    <span><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" title="tsconfig.json相关配置">tsconfig.json相关配置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 typeScript学习笔记">typeScript学习笔记</a>
+</div>
+
+    <span><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" title="TypeScript基础类型">TypeScript基础类型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/belogBuild/" title="分类于 博客搭建笔记">博客搭建笔记</a>
+</div>
+
+    <span><a href="/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="github pages + hexo搭建博客笔记 （一）">github pages + hexo搭建博客笔记 （一）</a></span>
+  </li>
+
       
   <li class="item">
     
@@ -409,55 +461,6 @@ Yume Shoka = star belog</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 python学习笔记">python学习笔记</a>
-</div>
-
-    <span><a href="/2022/12/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/" title="python">python</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 typeScript学习笔记">typeScript学习笔记</a>
-</div>
-
-    <span><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" title="TypeScript基础类型">TypeScript基础类型</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 typeScript学习笔记">typeScript学习笔记</a>
-</div>
-
-    <span><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" title="tsconfig.json相关配置">tsconfig.json相关配置</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/belogBuild/" title="分类于 博客搭建笔记">博客搭建笔记</a>
-</div>
-
-    <span><a href="/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="github pages + hexo搭建博客笔记 （一）">github pages + hexo搭建博客笔记 （一）</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94%E6%8E%A5%E5%8F%A3/" title="未命名">未命名</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/belogBuild/" title="分类于 博客搭建笔记">博客搭建笔记</a>
 </div>
 
@@ -468,10 +471,19 @@ Yume Shoka = star belog</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/js/" title="分类于 js">js</a>
+<a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 python学习笔记">python学习笔记</a>
 </div>
 
-    <span><a href="/2022/12/06/js/js%20reduce%E6%96%B9%E6%B3%95/" title="js reduce方法">js reduce方法</a></span>
+    <span><a href="/2022/12/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/" title="python">python</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94%E6%8E%A5%E5%8F%A3/" title="未命名">未命名</a></span>
   </li>
 
   </ul>
@@ -514,7 +526,7 @@ Yume Shoka = star belog</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2022/12/06/typeScript学习笔记/tsconfig.json相关配置/',
+    path: '2022/12/06/typeScript学习笔记/ts类型推断、联合类型/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"

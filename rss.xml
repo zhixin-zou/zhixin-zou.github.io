@@ -5,117 +5,63 @@
         <link>https://zhixin-zou.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 06 Dec 2022 17:40:30 +0800</pubDate>
-        <lastBuildDate>Tue, 06 Dec 2022 17:40:30 +0800</lastBuildDate>
-        <category>python</category>
+        <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Dec 2022 19:31:13 +0800</lastBuildDate>
         <category>ts</category>
+        <category>python</category>
         <category>belog</category>
         <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</guid>
-            <title>tsconfig.json相关配置</title>
-            <link>https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</link>
-            <category>ts</category>
-            <pubDate>Tue, 06 Dec 2022 17:40:30 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;tsconfigjson相关配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tsconfigjson相关配置&#34;&gt;#&lt;/a&gt; tsconfig.json 相关配置&lt;/h1&gt;
-&lt;h2 id=&#34;include&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#include&#34;&gt;#&lt;/a&gt; include&lt;/h2&gt;
-&lt;p&gt;需要编译的相关文件 /** 文件目录 /* 所有文件&lt;br&gt;
- &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;include&amp;quot;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;./src/**/*&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;],&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 表示编译 src 目录下所有文件&lt;/p&gt;
-&lt;h2 id=&#34;compileroptions&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#compileroptions&#34;&gt;#&lt;/a&gt; compilerOptions&lt;/h2&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;  // 编译器选项&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;compilerOptions&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;target&amp;quot;: &amp;quot;ES6&amp;quot;, // 指定编译为js的版本，默认是ES3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;module&amp;quot;: &amp;quot;ES6&amp;quot;, //指定模块化规范&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//    &amp;quot;lib&amp;quot;: []&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;outDir&amp;quot;: &amp;quot;./dist&amp;quot;, // 用来指定编译后文件所在目录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//    &amp;quot;outFile&amp;quot;: &amp;quot;&amp;quot;, // 把全局作用域的代码合并到一个文件中&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;allowJs&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;removeComments&amp;quot;: true, // 编译后一出原有注释,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;alwaysStrict&amp;quot;: true, // 编译后js使用严格模式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;noImplicitAny&amp;quot;: true, // 是否允许出现隐式any&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 具体情况可参照 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90eXBlc2NyaXB0LmJvb3Rjc3MuY29tL3RzY29uZmlnLWpzb24uaHRtbA==&#34;&gt;https://typescript.bootcss.com/tsconfig-json.html&lt;/span&gt; 以及 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2pzb24uc2NoZW1hc3RvcmUub3JnL3RzY29uZmln&#34;&gt;http://json.schemastore.org/tsconfig&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94%E6%8E%A5%E5%8F%A3/</guid>
-            <title></title>
-            <link>https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94%E6%8E%A5%E5%8F%A3/</link>
-            <pubDate>Thu, 17 Nov 2022 16:56:32 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;对象的类型接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对象的类型接口&#34;&gt;#&lt;/a&gt; 对象的类型 —— 接口&lt;/h1&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</guid>
-            <title>ts类型推论、联合类型</title>
-            <link>https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</link>
-            <category>ts</category>
-            <pubDate>Thu, 17 Nov 2022 14:51:32 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;ts类型推论-联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论-联合类型&#34;&gt;#&lt;/a&gt; ts 类型推论、联合类型&lt;/h1&gt;
-&lt;h2 id=&#34;ts类型推论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论&#34;&gt;#&lt;/a&gt; ts 类型推论&lt;/h2&gt;
-&lt;p&gt;如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型。&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let stringType = &amp;#x27;test&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = &amp;#x27;teststring&amp;#x27;     // 编译通过&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = 1                // 编译报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 其实上述代码等价于&lt;br&gt;
- &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let stringType: string = &amp;#x27;test&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = &amp;#x27;teststring&amp;#x27;     // 编译通过&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = 1                // 编译报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
-TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论。&lt;/p&gt;
-&lt;p&gt;如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查：&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let anyType;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anyType = &amp;#x27;teststring&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anyType = 1;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&#34;联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#联合类型&#34;&gt;#&lt;/a&gt; 联合类型&lt;/h2&gt;
-&lt;p&gt;联合类型（Union Types）表示取值可以为多种类型中的一种。&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let numberString: number | string&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = 1           // 编译成功&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = &amp;#x27;1&amp;#x27;         // 编译成功&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = true        // 报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 联合类型使用 | 分隔每个类型，可以将 | 理解为或.&lt;/p&gt;
-&lt;h5 id=&#34;访问联类型的属性和方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#访问联类型的属性和方法&#34;&gt;#&lt;/a&gt; 访问联类型的属性和方法&lt;/h5&gt;
-&lt;p&gt;当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法：&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function getLength(something: string): number &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.length; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function getLength2(something: string | number): number &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.length;      //  报错&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function getString(something: string | number): string &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 对比上面三个函数&lt;br&gt;
- length 是 string 的属性&lt;br&gt;
- length 不是 string 和 number 的共有属性，所以 getLength2 会报错。&lt;br&gt;
-访问 string 和 number 的共有属性是没问题的 getString 即可编译通过。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/14/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</guid>
-            <title>TypeScript基础类型</title>
-            <link>https://zhixin-zou.github.io/2022/11/14/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</link>
-            <category>ts</category>
-            <pubDate>Mon, 14 Nov 2022 17:35:28 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;typescript基础类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typescript基础类型&#34;&gt;#&lt;/a&gt; TypeScript 基础类型&lt;/h2&gt;
-&lt;h3 id=&#34;1数字类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1数字类型&#34;&gt;#&lt;/a&gt; 1. 数字类型&lt;/h3&gt;
-&lt;p&gt;在 typescript 里所有数字都是浮点型，除了支持十进制和十六进制字面量，TypeScript 还支持 ECMAScript 2015 中引入的二进制和八进制字面量&lt;br&gt;
- &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let a: Number&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a = 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let b: Number = 0xd000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2字符类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2字符类型&#34;&gt;#&lt;/a&gt; 2. 字符类型&lt;/h3&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let str1: string = &amp;#x27;123&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let str2: string = &amp;#x27;456&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(str1 + &amp;#x27;,&amp;#x27; + str2)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;3布尔类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3布尔类型&#34;&gt;#&lt;/a&gt; 3. 布尔类型&lt;/h3&gt;
-&lt;p&gt;表示逻辑值：true 和 false。&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let flag: boolean = true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;4数组类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4数组类型&#34;&gt;#&lt;/a&gt; 4. 数组类型&lt;/h3&gt;
-&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 在元素类型后面加上[],前面number表示数组中元素类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let arr: number[] = [1, 2];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 或者使用数组泛型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let arr1: Array&amp;lt;number&amp;gt; = [1, 2];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let arr2: String[] = [&amp;#x27;1&amp;#x27;, &amp;#x27;1&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;5元组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5元组&#34;&gt;#&lt;/a&gt; 5. 元组&lt;/h3&gt;
-&lt;p&gt;元组类型用来表示已知元素数量和类型的数组，各元素的类型不必相同，对应位置的类型需要相同。&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: [string, number];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = [&amp;#x27;one&amp;#x27;, 1];    // 运行正常&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// x = [1, &amp;#x27;one&amp;#x27;];    // 报错&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = [&amp;#x27;two&amp;#x27;, 2]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(x[0]);    // two&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;6枚举&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6枚举&#34;&gt;#&lt;/a&gt; 6. 枚举&lt;/h3&gt;
-&lt;p&gt;枚举类型用于定义数值集合。&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;enum Color &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    red,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    green,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    blue&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 定义一个Color的枚举类型的变量来接收枚举的值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let color: Color = Color.red&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(color);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(Color[2])&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;7void&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7void&#34;&gt;#&lt;/a&gt; 7.void&lt;/h3&gt;
-&lt;p&gt;在一定程度上 void 和 any 的类型像是相反的，表示没有任何类型，当一个函数没有返回值时，通常会见到其返回值类型是 void；&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function test(str):void&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(&amp;quot;this is my book&amp;quot;)    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 声明一个 void 类型变量似乎没什么大用，因为只能为他赋予 undefined 和 null&lt;/p&gt;
-&lt;h3 id=&#34;8null&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8null&#34;&gt;#&lt;/a&gt; 8.null&lt;/h3&gt;
-&lt;p&gt;①TypeScript 里，undefined 和 null 两者各自有自己的类型分别叫做 undefined 和 null。 和 void 相似，它们的本身的类型用处不是很大；&lt;/p&gt;
-&lt;p&gt;②默认情况下 null 和 undefined 是所有类型的子类型。 就是说你可以把 null 和 undefined 赋值给 number 类型的变量。&lt;/p&gt;
-&lt;h3 id=&#34;9undefined&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9undefined&#34;&gt;#&lt;/a&gt; 9.undefined&lt;/h3&gt;
-&lt;h3 id=&#34;10never&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10never&#34;&gt;#&lt;/a&gt; 10.never&lt;/h3&gt;
-&lt;p&gt;①never 类型表示的是那些永不存在的值的类型。 例如， never 类型是那些总是会抛出异常或根本就不会有返回值的函数表达式或箭头函数表达式的返回值类型； 变量也可能是 never 类型，当它们被永不为真的类型保护所约束时。&lt;/p&gt;
-&lt;p&gt;②never 类型是任何类型的子类型，也可以赋值给任何类型；然而，没有类型是 never 的子类型或可以赋值给 never 类型（除了 never 本身之外）。 即使 any 也不可以赋值给 never。&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: never;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let y: number;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 编译错误，数字类型不能转为 never 类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = 123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 运行正确，never 类型可以赋值给 never类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = (()=&amp;gt;&amp;#123; throw new Error(&amp;#x27;exception&amp;#x27;)&amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 运行正确，never 类型可以赋值给 数字类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;y = (()=&amp;gt;&amp;#123; throw new Error(&amp;#x27;exception&amp;#x27;)&amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 返回值为 never 的函数可以是抛出异常的情况&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function error(message: string): never &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    throw new Error(message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 返回值为 never 的函数可以是无法被执行到的终止点的情况&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function loop(): never &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    while (true) &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;11any&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#11any&#34;&gt;#&lt;/a&gt; 11.any&lt;/h3&gt;
-&lt;p&gt;任意值是 TypeScript 针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。&lt;/p&gt;
-&lt;p&gt;1、变量的值会动态改变时，比如来自用户的输入，任意值类型可以让这些变量跳过编译阶段的类型检查，示例代码如下：&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: any = 1;    // 数字类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = &amp;#x27;I am who I am&amp;#x27;;    // 字符串类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = false;    // 布尔类型&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 改写现有代码时，任意值允许在编译时可选择地包含或移除类型检查，示例代码如下：&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: any = 4;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x.ifItExists();    // 正确，ifItExists方法在运行时可能存在，但这里并不会检查&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x.toFixed();    // 正确&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 定义存储各种类型数据的数组时，示例代码如下：&lt;br&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let arrayList: any[] = [1, false, &amp;#x27;fine&amp;#x27;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arrayList[1] = 100;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;12-object&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#12-object&#34;&gt;#&lt;/a&gt; 12 object&lt;/h3&gt;
-&lt;p&gt;对象类型，非原始类型，常见的形式通过 {} 进行包裹&lt;br&gt;
- &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let obj:object;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;obj = &amp;#123;name: &amp;#x27;Zhangsan&amp;#x27;, age: 25&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
-            <title>github pages + hexo搭建博客笔记 （二）</title>
-            <link>https://zhixin-zou.github.io/2022/11/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
+            <title>github pages + hexo搭建博客笔记 （一）</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
             <category>belog</category>
-            <pubDate>Wed, 09 Nov 2022 14:44:20 +0800</pubDate>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;搭建步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建步骤&#34;&gt;#&lt;/a&gt; 搭建步骤&lt;/h1&gt;
+&lt;h2 id=&#34;一-安装hexo生成网站文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-安装hexo生成网站文件&#34;&gt;#&lt;/a&gt; 一、安装 Hexo 生成网站文件&lt;/h2&gt;
+&lt;p&gt;在文件夹中右击 git brash Here&lt;br&gt;
+&lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg1.png&#34; class&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt; &lt;br&gt;
+ 当然如果对 npm 比较熟悉可以使用     &lt;code&gt;$ npm install hexo&lt;/code&gt;  安装 hexo。&lt;br&gt;
+安装以后，可以使用以下两种方式执行 Hexo：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;npx hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用  &lt;code&gt;hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里我使用的是非全局安装方式搭建，安装完 hexo 后使用命令 &lt;code&gt;npx hexo init &amp;lt;自己取名&amp;gt;&lt;/code&gt;  这里我以 belog 为例&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg2.png&#34; class&gt;&lt;/p&gt;
+&lt;p&gt;初始化后会文件夹会出现如下代码&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg3.png&#34; class&gt;&lt;br&gt;
+ 然后  &lt;code&gt;cd belog&lt;/code&gt;  进入文件夹&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg4.png&#34; class&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-github-pages&#34;&gt;#&lt;/a&gt; 二、 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;首先登陆你的 github 账号，新建一个库&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg5.png&#34; class&gt;&lt;br&gt;
+ 进入建库界面&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg6.png&#34; class&gt;&lt;br&gt;
+ 这里的存储库名称及 Repository name 要命名为 &lt;code&gt;&amp;lt;user&amp;gt;.github.io&lt;/code&gt;  我这里因为博客已经搭建完成，所以显示的该账号已存在 zhixin-zou.github.io 仓库。小伙伴们第一次建的话直接点底下的 Create repository 就行。&lt;/p&gt;
+&lt;h2 id=&#34;将-hexo-部署到-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将-hexo-部署到-github-pages&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 GitHub Pages&lt;/h2&gt;
+&lt;p&gt;回到 git bash 在命令行安装 hexo-deployer-git 运行  &lt;code&gt;npm i hexo-deployer-git&lt;/code&gt; &lt;br&gt;
+&lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg7.png&#34; class&gt;&lt;br&gt;
+ 用代码编辑器打开 belog 文件夹，找到 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;br&gt;
+ &lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg8.png&#34; class&gt;&lt;br&gt;
+&lt;img data-src=&#34;/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg9.png&#34; class&gt;&lt;br&gt;
+ 将 url 换做你的地址，deploy 部分更换配置如下&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# example, https://github.com/hexojs/hexojs.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branch: gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
+最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</guid>
+            <title>github pages + hexo搭建博客笔记 （二）</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%20%EF%BC%88%E4%BA%8C%EF%BC%89/</link>
+            <category>belog</category>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;hexo搭建博客笔记-shoka主题配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo搭建博客笔记-shoka主题配置&#34;&gt;#&lt;/a&gt; hexo 搭建博客笔记 （shoka 主题配置）&lt;/h1&gt;
 &lt;h3 id=&#34;1-theme-shoka-依赖以下-hexo-插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-theme-shoka-依赖以下-hexo-插件&#34;&gt;#&lt;/a&gt; 1、 Theme Shoka 依赖以下 Hexo 插件&lt;/h3&gt;
 &lt;table&gt;
@@ -187,64 +133,10 @@ puppeteer 主要是用来渲染 mermaid 流程图，只要文章中不使用 mer
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/28/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/</guid>
-            <title>python</title>
-            <link>https://zhixin-zou.github.io/2022/10/28/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/</link>
-            <category>python</category>
-            <pubDate>Fri, 28 Oct 2022 17:06:04 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</guid>
-            <title>github pages + hexo搭建博客笔记 （一）</title>
-            <link>https://zhixin-zou.github.io/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</link>
-            <category>belog</category>
-            <pubDate>Fri, 14 Oct 2022 15:53:42 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;准备工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工作&#34;&gt;#&lt;/a&gt; 准备工作&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)&lt;/li&gt;
-&lt;li&gt;Git&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;搭建步骤&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建步骤&#34;&gt;#&lt;/a&gt; 搭建步骤&lt;/h1&gt;
-&lt;h2 id=&#34;一-安装hexo生成网站文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-安装hexo生成网站文件&#34;&gt;#&lt;/a&gt; 一、安装 Hexo 生成网站文件&lt;/h2&gt;
-&lt;p&gt;在文件夹中右击 git brash Here&lt;br&gt;
-&lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg1.png&#34; class&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;$ npm install -g hexo-cli&lt;/code&gt; &lt;br&gt;
- 当然如果对 npm 比较熟悉可以使用     &lt;code&gt;$ npm install hexo&lt;/code&gt;  安装 hexo。&lt;br&gt;
-安装以后，可以使用以下两种方式执行 Hexo：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;npx hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;将 Hexo 所在的目录下的 node_modules 添加到环境变量之中即可直接使用  &lt;code&gt;hexo &amp;lt;command&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;这里我使用的是非全局安装方式搭建，安装完 hexo 后使用命令 &lt;code&gt;npx hexo init &amp;lt;自己取名&amp;gt;&lt;/code&gt;  这里我以 belog 为例&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg2.png&#34; class&gt;&lt;/p&gt;
-&lt;p&gt;初始化后会文件夹会出现如下代码&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg3.png&#34; class&gt;&lt;br&gt;
- 然后  &lt;code&gt;cd belog&lt;/code&gt;  进入文件夹&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg4.png&#34; class&gt;&lt;/p&gt;
-&lt;h2 id=&#34;二-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-github-pages&#34;&gt;#&lt;/a&gt; 二、 GitHub Pages&lt;/h2&gt;
-&lt;p&gt;首先登陆你的 github 账号，新建一个库&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg5.png&#34; class&gt;&lt;br&gt;
- 进入建库界面&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg6.png&#34; class&gt;&lt;br&gt;
- 这里的存储库名称及 Repository name 要命名为 &lt;code&gt;&amp;lt;user&amp;gt;.github.io&lt;/code&gt;  我这里因为博客已经搭建完成，所以显示的该账号已存在 zhixin-zou.github.io 仓库。小伙伴们第一次建的话直接点底下的 Create repository 就行。&lt;/p&gt;
-&lt;h2 id=&#34;将-hexo-部署到-github-pages&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将-hexo-部署到-github-pages&#34;&gt;#&lt;/a&gt; 将 Hexo 部署到 GitHub Pages&lt;/h2&gt;
-&lt;p&gt;回到 git bash 在命令行安装 hexo-deployer-git 运行  &lt;code&gt;npm i hexo-deployer-git&lt;/code&gt; &lt;br&gt;
-&lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg7.png&#34; class&gt;&lt;br&gt;
- 用代码编辑器打开 belog 文件夹，找到 &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;br&gt;
- &lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg8.png&#34; class&gt;&lt;br&gt;
-&lt;img data-src=&#34;/2022/10/14/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/belogImg9.png&#34; class&gt;&lt;br&gt;
- 将 url 换做你的地址，deploy 部分更换配置如下&lt;br&gt;
- &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;repo: https://github.com/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# example, https://github.com/hexojs/hexojs.github.io&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;branch: gh-pages&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
- 然后运行  &lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo deploy&lt;/code&gt;  。&lt;br&gt;
-最后查看 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3VzZXJuYW1lLmdpdGh1Yi5pbw==&#34;&gt;username.github.io&lt;/span&gt; 上的网页是否部署成功。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</guid>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</guid>
             <title>vue2和vue3区别</title>
-            <link>https://zhixin-zou.github.io/2022/10/13/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</link>
-            <pubDate>Thu, 13 Oct 2022 11:00:56 +0800</pubDate>
+            <link>https://zhixin-zou.github.io/2022/12/06/vue3/vue2%E5%92%8Cvue3%E5%8C%BA%E5%88%AB/</link>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;一、新特性&lt;br&gt;
  1、组合式 API---setup&lt;/p&gt;
 &lt;p&gt;2、ref 创建响应式数据&lt;/p&gt;
@@ -264,10 +156,118 @@ puppeteer 主要是用来渲染 mermaid 流程图，只要文章中不使用 mer
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://zhixin-zou.github.io/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/</guid>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94%E6%8E%A5%E5%8F%A3/</guid>
+            <title></title>
+            <link>https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E2%80%94%E2%80%94%E6%8E%A5%E5%8F%A3/</link>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;对象的类型接口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对象的类型接口&#34;&gt;#&lt;/a&gt; 对象的类型 —— 接口&lt;/h1&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</guid>
+            <title>TypeScript基础类型</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</link>
+            <category>ts</category>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;typescript基础类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#typescript基础类型&#34;&gt;#&lt;/a&gt; TypeScript 基础类型&lt;/h2&gt;
+&lt;h3 id=&#34;1数字类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1数字类型&#34;&gt;#&lt;/a&gt; 1. 数字类型&lt;/h3&gt;
+&lt;p&gt;在 typescript 里所有数字都是浮点型，除了支持十进制和十六进制字面量，TypeScript 还支持 ECMAScript 2015 中引入的二进制和八进制字面量&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let a: Number&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a = 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let b: Number = 0xd000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2字符类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2字符类型&#34;&gt;#&lt;/a&gt; 2. 字符类型&lt;/h3&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let str1: string = &amp;#x27;123&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let str2: string = &amp;#x27;456&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(str1 + &amp;#x27;,&amp;#x27; + str2)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3布尔类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3布尔类型&#34;&gt;#&lt;/a&gt; 3. 布尔类型&lt;/h3&gt;
+&lt;p&gt;表示逻辑值：true 和 false。&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let flag: boolean = true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4数组类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4数组类型&#34;&gt;#&lt;/a&gt; 4. 数组类型&lt;/h3&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 在元素类型后面加上[],前面number表示数组中元素类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let arr: number[] = [1, 2];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 或者使用数组泛型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let arr1: Array&amp;lt;number&amp;gt; = [1, 2];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let arr2: String[] = [&amp;#x27;1&amp;#x27;, &amp;#x27;1&amp;#x27;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5元组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5元组&#34;&gt;#&lt;/a&gt; 5. 元组&lt;/h3&gt;
+&lt;p&gt;元组类型用来表示已知元素数量和类型的数组，各元素的类型不必相同，对应位置的类型需要相同。&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: [string, number];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = [&amp;#x27;one&amp;#x27;, 1];    // 运行正常&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// x = [1, &amp;#x27;one&amp;#x27;];    // 报错&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = [&amp;#x27;two&amp;#x27;, 2]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(x[0]);    // two&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6枚举&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6枚举&#34;&gt;#&lt;/a&gt; 6. 枚举&lt;/h3&gt;
+&lt;p&gt;枚举类型用于定义数值集合。&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;enum Color &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    red,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    green,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    blue&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 定义一个Color的枚举类型的变量来接收枚举的值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let color: Color = Color.red&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(color);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(Color[2])&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;7void&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#7void&#34;&gt;#&lt;/a&gt; 7.void&lt;/h3&gt;
+&lt;p&gt;在一定程度上 void 和 any 的类型像是相反的，表示没有任何类型，当一个函数没有返回值时，通常会见到其返回值类型是 void；&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function test(str):void&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;console.log(&amp;quot;this is my book&amp;quot;)    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 声明一个 void 类型变量似乎没什么大用，因为只能为他赋予 undefined 和 null&lt;/p&gt;
+&lt;h3 id=&#34;8null&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#8null&#34;&gt;#&lt;/a&gt; 8.null&lt;/h3&gt;
+&lt;p&gt;①TypeScript 里，undefined 和 null 两者各自有自己的类型分别叫做 undefined 和 null。 和 void 相似，它们的本身的类型用处不是很大；&lt;/p&gt;
+&lt;p&gt;②默认情况下 null 和 undefined 是所有类型的子类型。 就是说你可以把 null 和 undefined 赋值给 number 类型的变量。&lt;/p&gt;
+&lt;h3 id=&#34;9undefined&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#9undefined&#34;&gt;#&lt;/a&gt; 9.undefined&lt;/h3&gt;
+&lt;h3 id=&#34;10never&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#10never&#34;&gt;#&lt;/a&gt; 10.never&lt;/h3&gt;
+&lt;p&gt;①never 类型表示的是那些永不存在的值的类型。 例如， never 类型是那些总是会抛出异常或根本就不会有返回值的函数表达式或箭头函数表达式的返回值类型； 变量也可能是 never 类型，当它们被永不为真的类型保护所约束时。&lt;/p&gt;
+&lt;p&gt;②never 类型是任何类型的子类型，也可以赋值给任何类型；然而，没有类型是 never 的子类型或可以赋值给 never 类型（除了 never 本身之外）。 即使 any 也不可以赋值给 never。&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: never;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;let y: number;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 编译错误，数字类型不能转为 never 类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = 123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 运行正确，never 类型可以赋值给 never类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = (()=&amp;gt;&amp;#123; throw new Error(&amp;#x27;exception&amp;#x27;)&amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 运行正确，never 类型可以赋值给 数字类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;y = (()=&amp;gt;&amp;#123; throw new Error(&amp;#x27;exception&amp;#x27;)&amp;#125;)();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 返回值为 never 的函数可以是抛出异常的情况&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function error(message: string): never &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    throw new Error(message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 返回值为 never 的函数可以是无法被执行到的终止点的情况&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function loop(): never &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    while (true) &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;11any&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#11any&#34;&gt;#&lt;/a&gt; 11.any&lt;/h3&gt;
+&lt;p&gt;任意值是 TypeScript 针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。&lt;/p&gt;
+&lt;p&gt;1、变量的值会动态改变时，比如来自用户的输入，任意值类型可以让这些变量跳过编译阶段的类型检查，示例代码如下：&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: any = 1;    // 数字类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = &amp;#x27;I am who I am&amp;#x27;;    // 字符串类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x = false;    // 布尔类型&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 改写现有代码时，任意值允许在编译时可选择地包含或移除类型检查，示例代码如下：&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let x: any = 4;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x.ifItExists();    // 正确，ifItExists方法在运行时可能存在，但这里并不会检查&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;x.toFixed();    // 正确&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 定义存储各种类型数据的数组时，示例代码如下：&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let arrayList: any[] = [1, false, &amp;#x27;fine&amp;#x27;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arrayList[1] = 100;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-object&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#12-object&#34;&gt;#&lt;/a&gt; 12 object&lt;/h3&gt;
+&lt;p&gt;对象类型，非原始类型，常见的形式通过 {} 进行包裹&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let obj:object;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;obj = &amp;#123;name: &amp;#x27;Zhangsan&amp;#x27;, age: 25&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</guid>
+            <title>ts类型推论、联合类型</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</link>
+            <category>ts</category>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;ts类型推论-联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论-联合类型&#34;&gt;#&lt;/a&gt; ts 类型推论、联合类型&lt;/h1&gt;
+&lt;h2 id=&#34;ts类型推论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ts类型推论&#34;&gt;#&lt;/a&gt; ts 类型推论&lt;/h2&gt;
+&lt;p&gt;如果没有明确的指定类型，那么 TypeScript 会依照类型推论（Type Inference）的规则推断出一个类型。&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let stringType = &amp;#x27;test&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = &amp;#x27;teststring&amp;#x27;     // 编译通过&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = 1                // 编译报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 其实上述代码等价于&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let stringType: string = &amp;#x27;test&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = &amp;#x27;teststring&amp;#x27;     // 编译通过&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;stringType = 1                // 编译报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+TypeScript 会在没有明确的指定类型的时候推测出一个类型，这就是类型推论。&lt;/p&gt;
+&lt;p&gt;如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查：&lt;br&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let anyType;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anyType = &amp;#x27;teststring&amp;#x27;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;anyType = 1;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;联合类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#联合类型&#34;&gt;#&lt;/a&gt; 联合类型&lt;/h2&gt;
+&lt;p&gt;联合类型（Union Types）表示取值可以为多种类型中的一种。&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;let numberString: number | string&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = 1           // 编译成功&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = &amp;#x27;1&amp;#x27;         // 编译成功&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;numberString = true        // 报错&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 联合类型使用 | 分隔每个类型，可以将 | 理解为或.&lt;/p&gt;
+&lt;h5 id=&#34;访问联类型的属性和方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#访问联类型的属性和方法&#34;&gt;#&lt;/a&gt; 访问联类型的属性和方法&lt;/h5&gt;
+&lt;p&gt;当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function getLength(something: string): number &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.length; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function getLength2(something: string | number): number &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.length;      //  报错&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;function getString(something: string | number): string &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return something.toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 对比上面三个函数&lt;br&gt;
+ length 是 string 的属性&lt;br&gt;
+ length 不是 string 和 number 的共有属性，所以 getLength2 会报错。&lt;br&gt;
+访问 string 和 number 的共有属性是没问题的 getString 即可编译通过。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</guid>
+            <title>tsconfig.json相关配置</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</link>
+            <category>ts</category>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;tsconfigjson相关配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tsconfigjson相关配置&#34;&gt;#&lt;/a&gt; tsconfig.json 相关配置&lt;/h1&gt;
+&lt;h2 id=&#34;include&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#include&#34;&gt;#&lt;/a&gt; include&lt;/h2&gt;
+&lt;p&gt;需要编译的相关文件 /** 文件目录 /* 所有文件&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;include&amp;quot;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;./src/**/*&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;],&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 表示编译 src 目录下所有文件&lt;/p&gt;
+&lt;h2 id=&#34;compileroptions&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#compileroptions&#34;&gt;#&lt;/a&gt; compilerOptions&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;  // 编译器选项&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;compilerOptions&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;target&amp;quot;: &amp;quot;ES6&amp;quot;, // 指定编译为js的版本，默认是ES3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;module&amp;quot;: &amp;quot;ES6&amp;quot;, //指定模块化规范&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//    &amp;quot;lib&amp;quot;: []&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;outDir&amp;quot;: &amp;quot;./dist&amp;quot;, // 用来指定编译后文件所在目录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//    &amp;quot;outFile&amp;quot;: &amp;quot;&amp;quot;, // 把全局作用域的代码合并到一个文件中&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;allowJs&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;removeComments&amp;quot;: true, // 编译后一出原有注释,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;alwaysStrict&amp;quot;: true, // 编译后js使用严格模式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;noImplicitAny&amp;quot;: true, // 是否允许出现隐式any&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 具体情况可参照 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90eXBlc2NyaXB0LmJvb3Rjc3MuY29tL3RzY29uZmlnLWpzb24uaHRtbA==&#34;&gt;https://typescript.bootcss.com/tsconfig-json.html&lt;/span&gt; 以及 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2pzb24uc2NoZW1hc3RvcmUub3JnL3RzY29uZmln&#34;&gt;http://json.schemastore.org/tsconfig&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/</guid>
+            <title>python</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/py/</link>
+            <category>python</category>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/js/js%20reduce%E6%96%B9%E6%B3%95/</guid>
             <title>js reduce方法</title>
-            <link>https://zhixin-zou.github.io/2022/10/11/js/js%20reduce%E6%96%B9%E6%B3%95/</link>
-            <pubDate>Tue, 11 Oct 2022 10:45:22 +0800</pubDate>
+            <link>https://zhixin-zou.github.io/2022/12/06/js/js%20reduce%E6%96%B9%E6%B3%95/</link>
+            <pubDate>Tue, 06 Dec 2022 19:31:13 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;reduce 方法 (累加器)&lt;br&gt;
 array.reduce(function(total, currentValue, currentIndex, arr), initialValue);&lt;/p&gt;
 &lt;p&gt;function (total, currentValue, currentIndex, arr) 是一个回调函数&lt;/p&gt;
