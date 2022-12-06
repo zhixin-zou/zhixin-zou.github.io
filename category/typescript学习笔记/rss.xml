@@ -5,11 +5,27 @@
         <link>https://zhixin-zou.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Thu, 17 Nov 2022 14:51:32 +0800</pubDate>
-        <lastBuildDate>Thu, 17 Nov 2022 14:51:32 +0800</lastBuildDate>
+        <pubDate>Tue, 06 Dec 2022 17:40:30 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Dec 2022 17:40:30 +0800</lastBuildDate>
         <category>python</category>
         <category>ts</category>
         <category>belog</category>
+        <item>
+            <guid isPermalink="true">https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</guid>
+            <title>tsconfig.json相关配置</title>
+            <link>https://zhixin-zou.github.io/2022/12/06/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tsconfig.json%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</link>
+            <category>ts</category>
+            <pubDate>Tue, 06 Dec 2022 17:40:30 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;tsconfigjson相关配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tsconfigjson相关配置&#34;&gt;#&lt;/a&gt; tsconfig.json 相关配置&lt;/h1&gt;
+&lt;h2 id=&#34;include&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#include&#34;&gt;#&lt;/a&gt; include&lt;/h2&gt;
+&lt;p&gt;需要编译的相关文件 /** 文件目录 /* 所有文件&lt;br&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;include&amp;quot;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;./src/**/*&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;],&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 表示编译 src 目录下所有文件&lt;/p&gt;
+&lt;h2 id=&#34;compileroptions&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#compileroptions&#34;&gt;#&lt;/a&gt; compilerOptions&lt;/h2&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;  // 编译器选项&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;quot;compilerOptions&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;target&amp;quot;: &amp;quot;ES6&amp;quot;, // 指定编译为js的版本，默认是ES3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;module&amp;quot;: &amp;quot;ES6&amp;quot;, //指定模块化规范&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//    &amp;quot;lib&amp;quot;: []&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;outDir&amp;quot;: &amp;quot;./dist&amp;quot;, // 用来指定编译后文件所在目录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//    &amp;quot;outFile&amp;quot;: &amp;quot;&amp;quot;, // 把全局作用域的代码合并到一个文件中&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;allowJs&amp;quot;: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;removeComments&amp;quot;: true, // 编译后一出原有注释,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;alwaysStrict&amp;quot;: true, // 编译后js使用严格模式&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;noImplicitAny&amp;quot;: true, // 是否允许出现隐式any&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 具体情况可参照 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90eXBlc2NyaXB0LmJvb3Rjc3MuY29tL3RzY29uZmlnLWpzb24uaHRtbA==&#34;&gt;https://typescript.bootcss.com/tsconfig-json.html&lt;/span&gt; 以及 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2pzb24uc2NoZW1hc3RvcmUub3JnL3RzY29uZmln&#34;&gt;http://json.schemastore.org/tsconfig&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/17/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ts%E7%B1%BB%E5%9E%8B%E6%8E%A8%E6%96%AD%E3%80%81%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B/</guid>
             <title>ts类型推论、联合类型</title>
@@ -40,7 +56,7 @@ TypeScript 会在没有明确的指定类型的时候推测出一个类型，这
         </item>
         <item>
             <guid isPermalink="true">https://zhixin-zou.github.io/2022/11/14/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</guid>
-            <title>typeScript基础类型</title>
+            <title>TypeScript基础类型</title>
             <link>https://zhixin-zou.github.io/2022/11/14/typeScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/typeScript%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</link>
             <category>ts</category>
             <pubDate>Mon, 14 Nov 2022 17:35:28 +0800</pubDate>
