@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="abc">
+        <div id="op" style="background-color: aqua;">
+            123121
+            <div class="aaa" style="background-color: red; width: 20px; height: 20px;"></div>
+            <div class="aaa" style="background-color: pink; width: 20px; height: 20px;"></div>
+            <div class="aaa" style="background-color: chartreuse; width: 20px; height: 20px;"></div>
+            <div class="aaa" style="background-color: rgb(38, 0, 255); width: 20px; height: 20px;"></div>
+        </div>
+        <div id="as" style="background-color: red;">
+            123121
+        </div>
+        <div id="op" style="background-color: yellow;">
+            123121
+        </div>
+        <div id="op" style="background-color: green;">
+            123121
+        </div>
+        <div id="op" style="background-color: blue;">
+            123121
+        </div>
+        <div id="op" style="background-color: wheat;">
+            123121
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+   setTimeout(() => {
+        function buildTree(rootNode) {
+            // 用于递归遍历和树构建
+            function traverse(node) {
+                let treeNode = {
+                    node: node,
+                    children: []
+                };
+
+                // 递归遍历所有子节点
+                let children = node.children;
+                for (let i = 0; i < children.length; i++) {
+                    treeNode.children.push(traverse(children[i]));
+                }
+
+                return treeNode;
+            }
+            let tree = traverse(rootNode);
+            return tree;
+        }
+        // 将document.body下dom改为树状
+        let domTree = buildTree(document.body);
+
+
+        // 遍历document.body
+        function traverseTree(node) {
+            if (node === null) {
+                return;
+            }
+            let eleNode = []
+            let result = []
+            if (node?.children?.length > 1) {
+                eleNode = node.children.filter((item) => { return item?.node?.tagName !== 'SCRIPT' })
+                // console.log(eleNode, 'node');
+                if (eleNode && eleNode.length > 1) {
+                    // 将eleNode中元素两两组合，得到一个新的数组
+                    for (let i = 0; i < eleNode.length; i++) {
+                        for (let j = i + 1; j < eleNode.length; j++) {
+                            result.push([eleNode[i], eleNode[j]]);
+                        }
+                    }
+                    // console.log(result, 'result');
+                }
+            }
+            if (Array.isArray(eleNode)) {
+                eleNode.forEach((item) => {
+                    traverseTree(item);
+                });
+            }
+
+        }
+        traverseTree(domTree)
+
+        // 获取ele在页面上坐标
+        function getElementViewportCoordinates(element) {
+            const rect = element.getBoundingClientRect();
+            return {
+                top: rect.top,
+                left: rect.left,
+                bottom: rect.bottom,
+                right: rect.right,
+                width: rect.width,
+                height: rect.height,
+            };
+        }
+
+        // 计算两个元素边距 入参 [ele1, ele2]
+        let ele1 = document.querySelector('#op')
+        let ele2 = document.querySelector('#as')
+        function getBorderSize(ele1, ele2) {
+           let ele1Rect = getElementViewportCoordinates(ele1)
+           let ele2Rect = getElementViewportCoordinates(ele2)
+           console.log(ele1Rect, ele2Rect);
+           
+        }
+        getBorderSize(ele1, ele2)
+
+
+    }, 2000)
+
+
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .abc {
+        width: 800px;
+        height: 1000px;
+    }
+
+    #op {
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+        float: left;
+    }
+
+    #as {
+        width: 200px;
+        height: 300px;
+        margin: 10px;
+        float: left;
+    }
+</style>
